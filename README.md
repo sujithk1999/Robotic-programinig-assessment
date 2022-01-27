@@ -12,14 +12,14 @@ Step-2
 Install Topologiagal-Navigation package: To work in a upto date environment.
 
    
- sudo apt-get install \
-    ros-melodic-topological-utils \
-    ros-melodic-topological-navigation \
-    ros-melodic-topological-navigation-msgs \
-    ros-melodic-strands-navigation
+      sudo apt-get install \
+           ros-melodic-topological-utils \
+           ros-melodic-topological-navigation \
+           ros-melodic-topological-navigation-msgs \
+           ros-melodic-strands-navigation
 
 
-First, make sure that you have a working copy  The code is included in the uol_cmp9767m_tutorial folder. If you have your workspace set up already in the previous workshops, please pull the recent update from the repository as some of the workshop files have been updated recently or Create your own workspace and build package and pull the code from
+First, make sure that you have a working copy  The code is included in the uol_cmp9767m_tutorial folder. If you have your workspace set up already in the previous workshops, please pull the recent update from the repository as some of the workshop files have been updated recently or Create your own workspace and build package and pull the code from https://github.com/sujithk1999/Robotic-programinig-assessment.git
 
 
 Step-3:   In this task, we will run the topological navigation. The topological map for the assessment is available in uol_cmp9767m_tutorial/maps/test_mod.yaml. Create a folder (named mongodb) in your user home directory. MongoDB will store all database files required to run our topological map. This step is required only once. Launch the simulation setup
