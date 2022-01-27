@@ -13,10 +13,10 @@ Install Topologiagal-Navigation package: To work in a upto date environment.
 
    
                 sudo apt-get install \
-    ros-melodic-topological-utils \
-    ros-melodic-topological-navigation \
-    ros-melodic-topological-navigation-msgs \
-    ros-melodic-strands-navigation
+     ros-melodic-topological-utils \
+     ros-melodic-topological-navigation \
+     ros-melodic-topological-navigation-msgs \
+     ros-melodic-strands-navigation
 
 
 First, make sure that you have a working copy  The code is included in the uol_cmp9767m_tutorial folder. 
@@ -51,7 +51,7 @@ step-4
     
  And see what is happening.Look at the script (uol_cmp9767m_tutorial/scritps/set_topo_nav_goal.py) to see how the goals are sent.
 
-step-5 : To run the python programgoto uol_cmp9767m_tutorial/scripts
+step-5 : To run the python program goto uol_cmp9767m_tutorial/scripts
 
         python2 objtracking.py
         
