@@ -24,11 +24,7 @@ First, make sure that you have a working copy  The code is included in the uol_c
 
 Step-3
 
-    In this task, we will run the topological navigation. 
-
-    The topological map for the assessment is available in uol_cmp9767m_tutorial/maps/test_mod.yaml. 
-
-    Create a folder (named mongodb) in your user home directory. MongoDB will store all database files required to run our topological map. This step is required only once.
+    In this task, we will run the topological navigation. The topological map for the assessment is available in uol_cmp9767m_tutorial/maps/test_mod.yaml. Create a folder (named mongodb) in your user home directory. MongoDB will store all database files required to run our topological map. This step is required only once.
 
     Launch the simulation setup
 
@@ -37,33 +33,25 @@ Step-3
         roslaunch uol_cmp9767m_tutorial topo_nav.launch
         
                                if you work with a dockerised distribution (e.g. at home or using a remote access) please use the following line instead which will help to address some issues with the MongoDB database: HOSTNAME=0.0.0.0 roslaunch uol_cmp9767m_tutorial topo_nav.launch.
-
-        You will see some warnings in the terminal where you launched topo_nav.launch saying the pointset is not found in the message_store. This is because we haven't loaded the topological map to the mongodb yet. Once you do the next step, that warning should stop.
+ You will see some warnings in the terminal where you launched topo_nav.launch saying the pointset is not found in the message_store. This is because we haven't loaded the topological map to the mongodb yet. Once you do the next step, that warning should stop.
 
         rosrun topological_utils load_yaml_map.py $(rospack find uol_cmp9767m_tutorial)/maps/test_mod.yaml. This step is required only once.
 
-        open the topological map visualisation config for RVIZ in uol_cmp9767m_tutorial/config/topo_nav.rviz.
-
-        click the green arrows at the nodes seen in RVIZ to send topological_navigation goals to the robot.
-
-Navigate between different nodes and note the robot's behaviour on edges with a different directionality.
+Open the topological map visualisation config for RVIZ in uol_cmp9767m_tutorial/config/topo_nav.rviz.click the green arrows at the nodes seen in RVIZ to send topological_navigation goals to the robot.Navigate between different nodes and note the robot's behaviour on edges with a different directionality.
 
 
 step-4
 
    Action client
 
-    Follow the steps in Task 1 to launch the topological_navigation stack.
-
-    In another terminal run rosrun uol_cmp9767m_tutorial set_topo_nav_goal.py and see what is happening.
+    Follow the steps in Task 1 to launch the topological_navigation stack.In another terminal 
+    
+    run rosrun uol_cmp9767m_tutorial set_topo_nav_goal.py and see what is happening.
 
 Look at the script (uol_cmp9767m_tutorial/scritps/set_topo_nav_goal.py) to see how the goals are sent.
 
 step-5
 
-     	To run the python program
+     	To run the python programgoto uol_cmp9767m_tutorial/scripts
 
-
-     goto uol_cmp9767m_tutorial/scripts
-
-    And run : python2 objtracking.py
+       run : python2 objtracking.py
