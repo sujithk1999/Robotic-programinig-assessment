@@ -29,6 +29,9 @@ Step-3:   In this task, we will run the topological navigation. The topological 
         
         
         
+ To open the topological navigation use:
+        
+        
         roslaunch uol_cmp9767m_tutorial topo_nav.launch
         
                                
