@@ -27,6 +27,8 @@ Step-3:   In this task, we will run the topological navigation. The topological 
 
         roslaunch bacchus_gazebo vineyard_demo.launch world_name:=vineyard_small
         
+        
+        
         roslaunch uol_cmp9767m_tutorial topo_nav.launch
         
                                
@@ -42,7 +44,7 @@ step-4
 
    Action client Follow the steps in Task 1 to launch the topological_navigation stack.In another terminal 
     
-    run rosrun uol_cmp9767m_tutorial set_topo_nav_goal.py 
+      rosrun uol_cmp9767m_tutorial set_topo_nav_goal.py 
     
  And see what is happening.Look at the script (uol_cmp9767m_tutorial/scritps/set_topo_nav_goal.py) to see how the goals are sent.
 
