@@ -50,8 +50,6 @@ step-4
     
  And see what is happening.Look at the script (uol_cmp9767m_tutorial/scritps/set_topo_nav_goal.py) to see how the goals are sent.
 
-step-5
+step-5 : To run the python programgoto uol_cmp9767m_tutorial/scripts
 
-     	To run the python programgoto uol_cmp9767m_tutorial/scripts
-
-       run : python2 objtracking.py
+        python2 objtracking.py
