@@ -4,7 +4,7 @@ Step-1
   The workspace should be updated and upgraded first 
 
 
-        Update: sudo apt-get update && sudo apt-get upgrade
+        sudo apt-get update && sudo apt-get upgrade
 
 
 Step-2
@@ -34,7 +34,8 @@ Launch the simulation setup
  
         roslaunch uol_cmp9767m_tutorial topo_nav.launch
         
-                               if you work with a dockerised distribution (e.g. at home or using a remote access) please use the following line instead which will help to address some issues with the MongoDB database: HOSTNAME=0.0.0.0 roslaunch uol_cmp9767m_tutorial topo_nav.launch.
+                               
+                               If you work with a dockerised distribution (e.g. at home or using a remote access) please use the following line instead which will help to address some issues with the MongoDB database: HOSTNAME=0.0.0.0 roslaunch uol_cmp9767m_tutorial topo_nav.launch.
  You will see some warnings in the terminal where you launched topo_nav.launch saying the pointset is not found in the message_store. This is because we haven't loaded the topological map to the mongodb yet. Once you do the next step, that warning should stop.
 
         rosrun topological_utils load_yaml_map.py $(rospack find uol_cmp9767m_tutorial)/maps/test_mod.yaml. 
